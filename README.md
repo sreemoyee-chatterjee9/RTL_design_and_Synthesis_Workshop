@@ -484,3 +484,35 @@ Sequential logic circuits include memory elements (like flip-flops). Optimizing 
 - 🧬 **Sequential Logic Cloning**
   - Duplicates logic for performance improvement.
   - Used to break timing bottlenecks by replicating logic paths.
+
+<img width="954" height="1417" alt="image" src="https://github.com/user-attachments/assets/04818ec6-86d3-467c-bd97-cd0facde0262" />
+
+> 💡 **Note:**  
+> Not every flop with a `D` input tied off is considered a sequential constant propagation case.  
+> For it to qualify, the `Q` output must always resolve to a **constant value** across all clock cycles.
+
+| **Technique**              | **Description**                                                                 |
+|---------------------------|---------------------------------------------------------------------------------|
+| **State Optimization**     | - Optimization of unused states<br>- Realization of most condensed state machines<br>- Use of states |
+| **Retiming**               | - Technique to improve the performance of the circuit.<br>- Utilizing the useful slack to get the benefit of performance. |
+| **Sequential Logic Cloning** | - Physical aware synthesis |
+
+#### 🔸 Technique 2: Advanced Techniques
+
+- 🧠 **State Optimization**
+  - Optimizes unused or unreachable states.
+  - Results in **condensed**, **efficient** finite state machines (FSMs).
+  - Ensures only **useful states** are realized in hardware.
+
+- ⏱️ **Retiming**
+  - Technique used to **improve circuit performance**.
+  - Involves shifting flip-flops across logic to reduce the **critical path**.
+  - Utilizes **available slack** effectively for better timing closure.
+
+- 🧬 **Sequential Logic Cloning**
+  - Performance-focused optimization done during **physically aware synthesis**.
+  - Duplicates logic to reduce fanout and **relieve timing pressure** on critical paths.
+  - Helps with placement-driven improvements during implementation.
+ 
+<img width="771" height="709" alt="image" src="https://github.com/user-attachments/assets/6f7a1f6e-78b3-459e-9c83-e47ef5086b8f" />
+<img width="560" height="709" alt="image" src="https://github.com/user-attachments/assets/0b639bc2-632c-473b-b627-63df8f1663dd" />
