@@ -517,8 +517,43 @@ Sequential logic circuits include memory elements (like flip-flops). Optimizing 
 <img width="771" height="709" alt="image" src="https://github.com/user-attachments/assets/6f7a1f6e-78b3-459e-9c83-e47ef5086b8f" />
 <img width="560" height="709" alt="image" src="https://github.com/user-attachments/assets/0b639bc2-632c-473b-b627-63df8f1663dd" />
 
-### LAB: Combinational Logic Optimisations: CASE I 
+### LAB: Combinational Logic Optimisations: 
 
-<img width="706" height="209" alt="image" src="https://github.com/user-attachments/assets/5602b0f3-d683-4f4b-b7c0-7e365a22b28c" />
+### CASE I 
 
+<img width="731" height="214" alt="image" src="https://github.com/user-attachments/assets/a02ada25-70b8-40cd-b7b7-462b50ad8597" />
+
+So, with the Boolean Optimization we are expecting this case to be optimized into a two input AND Gate.
+ 
+<img width="751" height="179" alt="image" src="https://github.com/user-attachments/assets/705cacf8-df1b-4e6f-b290-656598d9d5df" />
+
+### CASE II :
+
+<img width="444" height="71" alt="image" src="https://github.com/user-attachments/assets/56290275-3221-4542-95bc-b7c661a96a3e" />
+
+<img width="132" height="83" alt="image" src="https://github.com/user-attachments/assets/903e2008-250a-4d5f-9126-ab96ceac9e17" />
+
+<img width="381" height="303" alt="image" src="https://github.com/user-attachments/assets/012b1392-b958-4b16-bd2b-54071b56536b" />
+
+<img width="198" height="270" alt="image" src="https://github.com/user-attachments/assets/5a30c644-b4f3-4f88-b5f8-684e5d9c32af" />
+
+<img width="929" height="303" alt="image" src="https://github.com/user-attachments/assets/777476c2-5284-469d-9d5f-981441470165" />
+
+<img width="640" height="191" alt="image" src="https://github.com/user-attachments/assets/2514b5e0-dc0f-4c4b-ab5e-0d8a52911850" />
+
+<img width="660" height="153" alt="image" src="https://github.com/user-attachments/assets/de3bbe9f-6efe-4a68-9ef7-cef097316c58" />
+
+<img width="748" height="184" alt="image" src="https://github.com/user-attachments/assets/1225a726-2df5-4032-9652-e3ca0b618012" />
+
+(A’+B’)’ simplifies to A+B using DeMorgan's Law.
+
+### CASE III:
+
+<img width="523" height="78" alt="image" src="https://github.com/user-attachments/assets/7ebbfb47-b2b1-45d9-b54e-edf6e0f9744f" />
+
+y = a ? (c ? b : 0) : 0
+
+<img width="586" height="373" alt="image" src="https://github.com/user-attachments/assets/0fc2335f-6afd-4b48-8772-b6b568d401b9" />
+
+<img width="586" height="373" alt="image" src="https://github.com/user-attachments/assets/ca98e23f-4151-4a7e-99af-e11e4556d70d" />
 
