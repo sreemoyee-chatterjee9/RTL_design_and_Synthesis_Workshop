@@ -865,10 +865,46 @@ Incorrect use of sensitivity lists in combinational always blocks can result in:
 - Simulated output behaving differently from synthesized circuit;
 - Latch inference instead of a proper multiplexer;
 
+---
 
+## ⚠️ Blocking Statement Caveat
 
+When using **blocking (`=`)** assignments inside `always` blocks, simulation may behave differently from actual synthesized hardware, especially in **sequential logic** like shift registers.
 
+### 🧨 Problem:
+Using **blocking assignments** in sequential circuits can lead to **unexpected simulation results** or **incorrect synthesis**.
 
+### ❌ Bad Example (Blocking Assignment):
+always @(posedge clk) begin
+  a = b;
+  b = a;
+end
 
+### ✅ Corrected Example (Non-blocking Assignment)::
+always @(posedge clk) begin
+  a <= b;
+  b <= a;
+end
 
+<img width="568" height="124" alt="image" src="https://github.com/user-attachments/assets/4a99bfd7-e666-4856-bf70-6d3642761653" />
 
+<img width="304" height="126" alt="image" src="https://github.com/user-attachments/assets/945f9c60-91e1-4078-8512-054b512b92d3" />
+
+<img width="604" height="159" alt="image" src="https://github.com/user-attachments/assets/e9469132-b502-485a-a3dc-7352e56de18e" />
+
+<img width="593" height="260" alt="image" src="https://github.com/user-attachments/assets/b9e54368-0628-4a3f-865f-446b77fa4a60" />
+
+<img width="352" height="283" alt="image" src="https://github.com/user-attachments/assets/8a07bdd5-0b43-4713-912d-ecf6a2a79264" />
+
+<img width="251" height="319" alt="image" src="https://github.com/user-attachments/assets/a8508e3d-464e-40e9-a853-47bb4a74a68a" />
+
+<img width="547" height="177" alt="image" src="https://github.com/user-attachments/assets/d2fb155a-8a8f-415b-b647-a37698989d7b" />
+
+<img width="1205" height="417" alt="image" src="https://github.com/user-attachments/assets/7684dc47-b826-44db-bb8e-bd1754a52e5d" />
+
+### 🔍 Root Cause:
+- ❌ Blocking assignments execute **sequentially** within the `always` block.
+- ❌ Each assignment **sees the latest updated value**, not the **previous cycle's value**.
+- ⚠️ This breaks time-dependent behavior like shift registers or counters.
+
+---
