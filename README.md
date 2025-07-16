@@ -395,6 +395,7 @@ Sync reset is higher priority that D as D is in the else portion.
 
 <img width="435" height="59" alt="image" src="https://github.com/user-attachments/assets/28fb9caf-4686-47b6-9354-d11a43050765" />
 
+
 <img width="530" height="471" alt="image" src="https://github.com/user-attachments/assets/211a04d9-c2f3-4bc5-929d-8d56dd9b41d5" />
 
 <img width="731" height="289" alt="image" src="https://github.com/user-attachments/assets/942fb653-1df0-4e9c-b168-ef962c6ce856" />
