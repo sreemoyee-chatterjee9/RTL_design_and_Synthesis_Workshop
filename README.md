@@ -635,12 +635,67 @@ We have programmed an active high reset, but library is expecting an active low 
 
 <img width="354" height="288" alt="image" src="https://github.com/user-attachments/assets/46b0a317-3a06-44f1-a4ec-6f98c8a8b80a" />
 
+### 🔸 DFF_CONST3
 
+<img width="498" height="304" alt="image" src="https://github.com/user-attachments/assets/1f54d0f5-873a-43bd-bacc-885948036fb8" />
 
+<img width="608" height="509" alt="image" src="https://github.com/user-attachments/assets/cab30868-e457-49eb-8362-1789185a7a15" />
 
+<img width="1205" height="124" alt="image" src="https://github.com/user-attachments/assets/1e76ccf3-0048-48f7-9b8d-e520ea6eb8fc" />
 
+VCD: Value Change Dump File
 
+<img width="1205" height="167" alt="image" src="https://github.com/user-attachments/assets/e94b836f-78a9-4d6f-9301-5d813b652152" />
 
+<img width="413" height="321" alt="image" src="https://github.com/user-attachments/assets/b0151e1b-518d-423b-b463-b52ec9b0f2bd" />
 
+<img width="1205" height="184" alt="image" src="https://github.com/user-attachments/assets/de9c443f-e391-4493-ab3f-c89f6823f85b" />
 
+### 🔸 DFF_CONST4
+
+<img width="498" height="296" alt="image" src="https://github.com/user-attachments/assets/ec30ab1d-b722-429e-80a5-ed83aabe69ac" />
+
+<img width="1205" height="186" alt="image" src="https://github.com/user-attachments/assets/efd7f354-f508-4ef7-9ddd-a4666bb3610c" />
+
+<img width="426" height="284" alt="image" src="https://github.com/user-attachments/assets/a0cccc0d-c6ab-46a3-a612-a9970c310afb" />
+
+<img width="531" height="550" alt="image" src="https://github.com/user-attachments/assets/f48a3a78-a976-4f6d-943e-e3426576a752" />
+
+Optimization done as Q values are constant.
+
+### 🔸 DFF_CONST5
+
+<img width="501" height="315" alt="image" src="https://github.com/user-attachments/assets/3bb9bcac-8dbb-44cb-8ed9-77f2ad5068ff" />
+
+<img width="1205" height="114" alt="image" src="https://github.com/user-attachments/assets/df01fc03-c11b-4456-918c-7d3f5df4524c" />
+
+<img width="434" height="295" alt="image" src="https://github.com/user-attachments/assets/f36eccb8-0273-443a-b8ca-4e3dc9f0219c" />
+
+<img width="1205" height="178" alt="image" src="https://github.com/user-attachments/assets/f04d9d14-e98b-499d-a691-0d19e650f9a1" />
+
+---
+
+### Unused Output Optimization:
+
+<img width="503" height="234" alt="image" src="https://github.com/user-attachments/assets/71d10106-1a40-46ee-9707-ffe77d4049b0" />
+
+<img width="531" height="299" alt="image" src="https://github.com/user-attachments/assets/0895418d-b349-44c2-bf39-a22801a333b9" />
+
+<img width="96" height="225" alt="image" src="https://github.com/user-attachments/assets/20dc9ef0-b4ba-4cfd-9cf2-9b1148c42c8a" />
+
+<img width="408" height="321" alt="image" src="https://github.com/user-attachments/assets/3d1114af-c75e-4ab6-b545-9d338c3b45d8" />
+
+<img width="531" height="301" alt="image" src="https://github.com/user-attachments/assets/2576daab-97fd-4173-afb4-27a2e3fd4f94" />
+
+<img width="1205" height="156" alt="image" src="https://github.com/user-attachments/assets/b3d8fb18-6c55-412f-826d-635f9988f70a" />
+
+<img width="496" height="216" alt="image" src="https://github.com/user-attachments/assets/e9c1970f-2386-4b73-9355-b2d7bb07cbd9" />
+
+Using all 3bits of the counter now.
+
+<img width="421" height="403" alt="image" src="https://github.com/user-attachments/assets/2eb06b59-d2ae-4f2a-ae92-d91293ddb4cd" />
+
+<img width="1205" height="273" alt="image" src="https://github.com/user-attachments/assets/07261dc8-619c-46f8-974a-65bdbcafd1ed" />
+
+<img width="887" height="302" alt="image" src="https://github.com/user-attachments/assets/878b63be-dc9e-4d7f-bab3-baaaaab239c9" />
 
