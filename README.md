@@ -59,13 +59,17 @@ Uut: unit under test
 **Synthesizer:** Tool used for converting the RTL to netlist
 Yosys is the synthesizer tool.
 <img width="661" height="354" alt="image" src="https://github.com/user-attachments/assets/218cb562-10bc-4d41-8be2-edc43a6a2cdf" />
+
 <u>Verify the Synthesis output:</u>
+
 <img width="623" height="354" alt="image" src="https://github.com/user-attachments/assets/eac2697a-69ec-4398-ace5-36b9c7ac59f4" />
 
 ---
 
 **Logic Synthesis:**
+
 <u>RTL Design:</u>
+
 * It is the behavioural representation of the required specification:
 
 
