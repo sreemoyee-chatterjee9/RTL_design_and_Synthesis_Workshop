@@ -92,9 +92,29 @@ RTL Design:
 
 <img width="1050" height="788" alt="image" src="https://github.com/user-attachments/assets/64c19244-d5ec-4cbd-84eb-bd49f68e12bb" />
 
+The current carrying capability of a transistor is a function of its width. Wider transistor, low delay, more power, more area.
+## Setup Time and Hold Time
 
+### 🔹 Setup Time
 
+- **Definition**:  
+  The minimum time interval that the input data (`D`) must be stable and valid **before** the active edge (rising or falling) of the clock signal.
 
+- **Purpose**:  
+  Ensures the input data is available and stable long enough for the flip-flop to reliably latch it when the clock edge arrives.
 
+- **Violation**:  
+  If the input data changes too close to the clock edge (within the setup time), the flip-flop might not capture the intended value, potentially leading to incorrect operation.
 
+---
 
+### 🔹 Hold Time
+
+- **Definition**:  
+  The minimum time interval that the input data (`D`) must be stable and valid **after** the active edge of the clock signal.
+
+- **Purpose**:  
+  Ensures the input data remains stable long enough after the clock edge to allow the flip-flop to properly latch the data before it changes.
+
+- **Violation**:  
+  If the input data changes too soon after the clock edge (within the hold time), the flip-flop might not latch the intended value.
