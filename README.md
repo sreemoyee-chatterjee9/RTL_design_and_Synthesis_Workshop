@@ -60,7 +60,7 @@ Uut: unit under test
 Yosys is the synthesizer tool.
 <img width="661" height="354" alt="image" src="https://github.com/user-attachments/assets/218cb562-10bc-4d41-8be2-edc43a6a2cdf" />
 
-<u>Verify the Synthesis output:</u>
+Verify the Synthesis output:
 
 <img width="623" height="354" alt="image" src="https://github.com/user-attachments/assets/eac2697a-69ec-4398-ace5-36b9c7ac59f4" />
 
@@ -68,8 +68,17 @@ Yosys is the synthesizer tool.
 
 **Logic Synthesis:**
 
-<u>RTL Design:</u>
+RTL Design:
 
 * It is the behavioural representation of the required specification:
+
+<img width="460" height="266" alt="image" src="https://github.com/user-attachments/assets/eb16588d-1135-4929-a513-bd578372b2c4" />
+
+- **RTL Code → Digital Logic Circuit**
+  - This transformation is done during **synthesis**.
+- **RTL → Gate-Level Translation**
+  - The result of this translation is called a **netlist** (written-out file).
+
+
 
 
