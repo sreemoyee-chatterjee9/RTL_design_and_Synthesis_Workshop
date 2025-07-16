@@ -555,5 +555,4 @@ y = a ? (c ? b : 0) : 0
 
 <img width="586" height="373" alt="image" src="https://github.com/user-attachments/assets/0fc2335f-6afd-4b48-8772-b6b568d401b9" />
 
-<img width="586" height="373" alt="image" src="https://github.com/user-attachments/assets/ca98e23f-4151-4a7e-99af-e11e4556d70d" />
-
+<img width="240" height="158" alt="image" src="https://github.com/user-attachments/assets/ec6dc9a0-2595-4783-aa17-839637a6fba4" />
