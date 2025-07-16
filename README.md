@@ -252,13 +252,13 @@ Larger transistors offer faster switching speeds due to increased drive strength
 <img width="553" height="238" alt="image" src="https://github.com/user-attachments/assets/d343f28d-18b5-490c-8cab-9f37d4577a15" />
 <img width="389" height="1016" alt="image" src="https://github.com/user-attachments/assets/1522e6a6-2756-495f-a139-4dcde0fa054f" />
 - **Hierarchical Synthesis**:
-  - ➤ Hierarchies are **preserved** during synthesis.
-  - ➤ Useful for managing large designs in a modular way.
+  ➤ Hierarchies are **preserved** during synthesis.
+  ➤ Useful for managing large designs in a modular way.
 
 - **Flat Synthesis**:
-  - ➤ All module hierarchies are **flattened** into a single-level netlist.
-  - ➤ The synthesis tool **may implement NAND gates** instead of AND gates with stacked PMOS transistors.
-  - ➤ This is because **stacked PMOS is avoided** due to its **poor mobility**.
+  ➤ All module hierarchies are **flattened** into a single-level netlist.
+  ➤ The synthesis tool **may implement NAND gates** instead of AND gates with stacked PMOS transistors.
+  ➤ This is because **stacked PMOS is avoided** due to its **poor mobility**.
 
 - **Command to Flatten Hierarchy**:
     flatten
@@ -268,11 +268,107 @@ Larger transistors offer faster switching speeds due to increased drive strength
 <img width="1205" height="172" alt="image" src="https://github.com/user-attachments/assets/2f38dfab-4be6-4daa-aff4-86ae3a2913c2" />
 
 - **Flat Synthesis**:
-  - ➤ All module hierarchies are **flattened** into a single-level netlist.
-  - ➤ The synthesis tool **may implement NAND gates** instead of AND gates with stacked PMOS transistors.
-  - ➤ This is because **stacked PMOS is avoided** due to its **poor mobility**.
-  - ➤ **Whole structure = whole netlist**: The entire design is synthesized as one unified block.
+  ➤ All module hierarchies are **flattened** into a single-level netlist.
+  ➤ The synthesis tool **may implement NAND gates** instead of AND gates with stacked PMOS transistors.
+  ➤ This is because **stacked PMOS is avoided** due to its **poor mobility**.
+  ➤ **Whole structure = whole netlist**: The entire design is synthesized as one unified block.
 
 
+<img width="709" height="1050" alt="image" src="https://github.com/user-attachments/assets/846d7b87-641c-4524-9823-3198d362f63a" />
+<img width="333" height="35" alt="image" src="https://github.com/user-attachments/assets/f5d710c2-354e-4f37-a2b8-3a21a201067d" />
+<img width="451" height="338" alt="image" src="https://github.com/user-attachments/assets/b03f3c8d-5d0b-40c6-8d57-38e272d953d0" />
+### Synthesize at sub_module1 Level
+<img width="750" height="175" alt="image" src="https://github.com/user-attachments/assets/7b201656-c172-4bd9-90c3-a94289e09b24" />
+
+### 🔹 Why Perform Submodule-Level Synthesis?
+
+There are specific benefits to synthesizing submodules separately rather than synthesizing the entire design in one go.
+
+### 🔹 Why Perform Submodule-Level Synthesis?
+
+There are specific benefits to synthesizing submodules separately rather than synthesizing the entire design in one go.
+
+- ✅ **Reuse of Synthesized Modules**  
+  - ➤ If the same module (e.g., a multiplier) is instantiated multiple times, we can **synthesize it once**, generate the netlist, and **replicate it** as needed.  
+  - ➤ Example: Instead of synthesizing the multiplier **6 times**, synthesize it once and stitch it into the top module **6 times**, saving significant time and effort.
+
+- ✅ **Preferred for Repeated Modules**  
+  - ➤ Efficient when there are **multiple instances of the same logic block** in a design.
+
+- ✅ **Divide and Conquer Approach**  
+  - ➤ For **massive designs**, it's better to break them into smaller parts.  
+  - ➤ Each submodule is synthesized separately with **tool-level optimization**, producing an efficient netlist.  
+  - ➤ Then, these are **stitched together** at the top-level for a final optimized netlist.
+  - Command : synth -top <top_module>
+
+<img width="423" height="241" alt="image" src="https://github.com/user-attachments/assets/cbddc94b-342f-424a-aa6e-5571ef00c654" />
 
 
+### 🔹 How to Code a Flip-Flop (Flop)
+
+#### 🧠 Why Do We Use Flops?
+
+- Combinational circuits can produce **glitches** due to changes in inputs arriving at **slightly different times**.
+- The output of a combinational circuit changes **immediately**, and may toggle unpredictably before settling—this causes glitches.
+- The more the **combinational depth**, the more the chances of glitches.
+- Continuous toggling or glitching at outputs can make circuits **unreliable** or **power-hungry**.
+
+#### ✅ Role of Flops:
+
+- **Flip-flops** store the signal value and **isolate logic stages**.
+- Output (`Q`) changes **only on a clock edge**, making it **stable** and free from glitches caused by intermediate logic.
+- Flip-flops **shield `Q` from changes in `D`** between clock edges.
+- This provides a **clean timing boundary** and helps in **timing closure**.
+
+#### 🔁 Reset and Set:
+
+- Flops can be initialized using **reset** or **set** signals.
+- These signals can be:
+  - **Synchronous**: Triggered with the clock.
+  - **Asynchronous**: Triggered independent of the clock (immediate action).
+
+---
+
+<img width="586" height="443" alt="image" src="https://github.com/user-attachments/assets/ab739e0f-5c87-45b2-b8ab-9400e48fdb71" />
+
+### Positive asynchronous reset D Flip Flop [irrespective of clock]:
+
+<img width="733" height="160" alt="image" src="https://github.com/user-attachments/assets/2abfead3-4a50-47c6-818d-a3148fe334cb" />
+
+### Positive asynchronous set D Flip Flop [irrespective of clock]:
+
+<img width="703" height="159" alt="image" src="https://github.com/user-attachments/assets/630c05c2-c292-45ad-b66a-0e30d8e38543" />
+
+### Synchronous Reset D Flip Flop:
+
+<img width="860" height="173" alt="image" src="https://github.com/user-attachments/assets/8e27075e-351c-44f0-b863-f6d2e514e7b0" />
+
+<img width="386" height="531" alt="image" src="https://github.com/user-attachments/assets/798753fc-b7f1-468f-b2e8-773bd07f579e" />
+
+### Asynchronous Reset:
+
+<img width="1153" height="215" alt="image" src="https://github.com/user-attachments/assets/dc735df9-57a0-4e5a-92f5-538479c711e6" />
+
+<img width="1205" height="139" alt="image" src="https://github.com/user-attachments/assets/87116fed-ef98-4c04-a617-9c1bf9769631" />
+
+### Asynchronous Set:
+
+<img width="1181" height="221" alt="image" src="https://github.com/user-attachments/assets/135751b0-9e42-40d8-8c10-a3b1c4db4416" />
+
+<img width="1205" height="118" alt="image" src="https://github.com/user-attachments/assets/93282acf-76f2-4ce7-902e-be43c65751a3" />
+
+### Synchronous Reset:
+
+<img width="1126" height="114" alt="image" src="https://github.com/user-attachments/assets/27483f57-9b47-4cad-893b-8a8391258d64" />
+
+<img width="1205" height="131" alt="image" src="https://github.com/user-attachments/assets/0ce71351-a81e-44e1-bdd0-865936b2cde2" />
+
+Sync reset is higher priority that D as D is in the else portion.
+
+Synthesize these sync/async set/reset designs:
+
+<img width="865" height="478" alt="image" src="https://github.com/user-attachments/assets/3f661a3b-c792-45f6-861b-cb567c94580d" />
+
+<img width="451" height="296" alt="image" src="https://github.com/user-attachments/assets/8c83a853-3f00-4200-8f3f-9a7fdf591ae6" />
+
+<img width="706" height="40" alt="image" src="https://github.com/user-attachments/assets/b21c1672-b9bc-44c3-a364-1142fb38f961" />
