@@ -768,11 +768,17 @@ This is a crucial concept when using the `always` block in Verilog.
 
 ### 🚧 Caveats of Blocking Assignments
 
-**Example Goal**: Creating a shift register.
+**Example Goal 1**: Creating a shift register.
 
 > ❌ If you use blocking assignments (`=`), values may be overwritten in the same simulation cycle because each statement updates immediately.
 
 > ✅ For sequential logic like shift registers, **non-blocking (`<=`) assignments are recommended** to ensure correct clocked behavior.
+
+<img width="635" height="392" alt="image" src="https://github.com/user-attachments/assets/453bcf22-bba2-4f71-aa57-a98024e48af7" />
+
+<img width="709" height="481" alt="image" src="https://github.com/user-attachments/assets/e602328a-32e3-41bc-b5ae-42a667c4f249" />
+
+Always use non-blocking in the case of writing the codes for sequential circuits.
 
 ---
 
@@ -781,3 +787,88 @@ This is a crucial concept when using the `always` block in Verilog.
 |-----------------|--------|----------------------|------------------------|
 | Blocking        | `=`    | Sequential (step-by-step) | Combinational logic (sometimes) |
 | Non-Blocking    | `<=`   | Parallel (event-driven)   | Clocked logic (flip-flops, registers) |
+
+---
+
+**Example Goal 2**: To create a circuit like mentioned below: (Synthesis Simulation Mismatch)
+
+<img width="304" height="126" alt="image" src="https://github.com/user-attachments/assets/b0a7cedf-2319-4675-9a1b-31c989f9d760" />
+
+<img width="885" height="452" alt="image" src="https://github.com/user-attachments/assets/8a41e28f-52ad-43b0-994d-906baaf4ee0e" />
+
+### 🧪 Why Simulation Mismatches Occur
+
+- Both blocking (`=`) and non-blocking (`<=`) assignment styles can result in the **same synthesized hardware circuit**.
+- However, during **RTL simulation**, their behavior may differ significantly due to **timing and ordering of updates**.
+- These mismatches are often **not caught** in RTL simulation alone.
+
+### 🔍 Why We Need GLS (Gate Level Simulation)
+
+- GLS simulates the **post-synthesis netlist** and exposes issues that RTL simulation might miss.
+- Essential for catching:
+  - Mismatches caused by incorrect use of blocking assignments
+  - Missing sensitivity lists
+  - Glitches or race conditions
+- GLS helps **align simulation behavior with actual hardware behavior**, especially when SDF (Standard Delay Format) is used.
+
+---
+
+### LAB WORK:
+
+🔍 How to invoke GLS:
+
+<img width="663" height="496" alt="image" src="https://github.com/user-attachments/assets/425c0048-f3ab-42a8-b598-bdcc7d55207a" />
+
+TERNARY OPRTATOR:
+Y = SEL?I1:I0;
+
+<img width="1205" height="105" alt="image" src="https://github.com/user-attachments/assets/13b1506f-205f-4b31-a79f-1864d2c7ebef" />
+
+<img width="1205" height="112" alt="image" src="https://github.com/user-attachments/assets/87d68e84-c39e-43b0-b4dd-baf8190d7e09" />
+
+<img width="751" height="284" alt="image" src="https://github.com/user-attachments/assets/f74a3d5c-12b1-46cf-96b4-6fc063829ef0" />
+
+<img width="434" height="303" alt="image" src="https://github.com/user-attachments/assets/e2e25915-5f2e-4dc8-b1d3-d0ac73399795" />
+
+<img width="591" height="191" alt="image" src="https://github.com/user-attachments/assets/d87ea3de-9ac6-4bc4-8cd4-1fecc16b2db9" />
+
+<img width="520" height="191" alt="image" src="https://github.com/user-attachments/assets/f77d41de-9afd-4947-b25a-f0b76aa123ce" />
+
+<img width="1205" height="90" alt="image" src="https://github.com/user-attachments/assets/9320e36b-bb50-4f08-aff5-3650a6f232f3" />
+
+<img width="1205" height="190" alt="image" src="https://github.com/user-attachments/assets/d8e57b5d-46e5-4a77-bc19-4416f8d32aa1" />
+
+---
+
+## ⚠️ BAD MUX Example:
+
+<img width="566" height="153" alt="image" src="https://github.com/user-attachments/assets/31b9956d-3607-4d83-8b95-d5bbd0524acc" />
+
+<img width="1059" height="246" alt="image" src="https://github.com/user-attachments/assets/8337022a-d55c-4051-95b4-5880b892b776" />
+
+<img width="1205" height="98" alt="image" src="https://github.com/user-attachments/assets/8242d71c-ba7f-4759-b446-f09295d8c4a2" />
+
+<img width="351" height="236" alt="image" src="https://github.com/user-attachments/assets/ccd29078-e6c3-439d-805a-9c470a52f916" />
+
+<img width="428" height="236" alt="image" src="https://github.com/user-attachments/assets/f6b6287a-cb46-4c4e-a9b2-385a1868114d" />
+
+<img width="1205" height="219" alt="image" src="https://github.com/user-attachments/assets/c5532e4a-12db-4eb1-8c56-d5d8c3a50260" />
+
+<img width="1205" height="121" alt="image" src="https://github.com/user-attachments/assets/2e5f1d01-aa40-4a22-9b0b-483e8c6e0dd6" />
+
+## ⚠️ Synthesis-Simulation Mismatch: BAD MUX Due to Missing Sensitivity List
+
+A **BAD MUX** can cause mismatches between RTL simulation and synthesized hardware if the **sensitivity list is incomplete** or **latch behavior is inferred**.
+
+### 🔍 Issue:
+Incorrect use of sensitivity lists in combinational always blocks can result in:
+- Simulated output behaving differently from synthesized circuit;
+- Latch inference instead of a proper multiplexer;
+
+
+
+
+
+
+
+
