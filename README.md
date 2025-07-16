@@ -436,3 +436,18 @@ As no standard cells are there, there is no need of abc -liberty
 - Example:
   ```verilog
   assign y = a & 1'b0;  // Can be reduced to y = 1'b0
+
+#### 🔸 Technique 2: Boolean Logic Optimization
+
+- Optimize large and complex Boolean expressions to reduce logic depth and gate count.
+
+  - 🧮 **K-Map (Karnaugh Map)**  
+    - Visual method for simplifying Boolean expressions (up to 5-6 variables).  
+    - Great for manual simplification.
+
+  - 🧠 **Quine–McCluskey Algorithm**  
+    - Tabular method ideal for automated tools.  
+    - Systematic and programmable.
+
+---
+
