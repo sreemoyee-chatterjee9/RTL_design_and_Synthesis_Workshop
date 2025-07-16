@@ -517,6 +517,8 @@ Sequential logic circuits include memory elements (like flip-flops). Optimizing 
 <img width="771" height="709" alt="image" src="https://github.com/user-attachments/assets/6f7a1f6e-78b3-459e-9c83-e47ef5086b8f" />
 <img width="560" height="709" alt="image" src="https://github.com/user-attachments/assets/0b639bc2-632c-473b-b627-63df8f1663dd" />
 
+---
+
 ### LAB: Combinational Logic Optimisations: 
 
 ### CASE I 
@@ -526,6 +528,7 @@ Sequential logic circuits include memory elements (like flip-flops). Optimizing 
 So, with the Boolean Optimization we are expecting this case to be optimized into a two input AND Gate.
  
 <img width="751" height="179" alt="image" src="https://github.com/user-attachments/assets/705cacf8-df1b-4e6f-b290-656598d9d5df" />
+
 
 ### CASE II :
 
@@ -547,6 +550,7 @@ So, with the Boolean Optimization we are expecting this case to be optimized int
 
 (A’+B’)’ simplifies to A+B using DeMorgan's Law.
 
+
 ### CASE III:
 
 <img width="523" height="78" alt="image" src="https://github.com/user-attachments/assets/7ebbfb47-b2b1-45d9-b54e-edf6e0f9744f" />
@@ -563,11 +567,77 @@ y = a ? (c ? b : 0) : 0
 
 <img width="709" height="237" alt="image" src="https://github.com/user-attachments/assets/2c99e55c-5563-4774-990f-8e636799a0b7" />
 
+
 ### CASE IV:
 
 <img width="528" height="63" alt="image" src="https://github.com/user-attachments/assets/3cd5074c-c572-4e67-b626-dd43e779f638" />
 
 <img width="192" height="125" alt="image" src="https://github.com/user-attachments/assets/717e540f-4f9c-407f-845b-02a6cfb11aad" />
+
+<img width="574" height="189" alt="image" src="https://github.com/user-attachments/assets/19bfdc8e-ba99-4a89-bf4c-ec390f4f2247" />
+
+
+### CASE V:
+
+<img width="585" height="321" alt="image" src="https://github.com/user-attachments/assets/70dcbfaf-1e30-44ce-b6ac-266e80ae1f25" />
+
+sub_module1 : y = a AND b
+sub_module2 : y = a XOR b
+U1 : n1 = a & b = a & 1 = a
+U2 : n2 = n1 ^ b = a XOR b = a XOR 0 = a
+U3 : n3 = b ^ d = b XOR d
+y = c OR (b AND n1) = c OR ab
+
+<img width="809" height="400" alt="image" src="https://github.com/user-attachments/assets/c091fc9b-dc68-484a-8641-bbcfb8857bc3" />
+
+### CASE VI:
+
+<img width="790" height="355" alt="image" src="https://github.com/user-attachments/assets/f86eff11-1110-4188-9252-ce3abab127ed" />
+
+<img width="520" height="698" alt="image" src="https://github.com/user-attachments/assets/b0d18147-36c5-443c-afcc-25634094102f" />
+
+---
+
+### SEQUENTIAL OPTIMIZATION:
+
+<img width="1205" height="351" alt="image" src="https://github.com/user-attachments/assets/c1fa54d5-080f-416a-a85f-58fd83f9b3bf" />
+
+### 🔸 DFF_CONST1
+<img width="591" height="278" alt="image" src="https://github.com/user-attachments/assets/ef4d1669-d1af-42d8-9232-48d70c93b86a" />
+### 🔸 DFF_CONST2
+<img width="591" height="271" alt="image" src="https://github.com/user-attachments/assets/8bb14587-4748-4bfb-bb47-eaaa257eea5c" />
+
+<img width="1116" height="135" alt="image" src="https://github.com/user-attachments/assets/7aab17b0-b58f-41a1-9592-600c0600221c" />
+
+<img width="1205" height="129" alt="image" src="https://github.com/user-attachments/assets/5f32897b-e8b4-47e2-8adb-2a51cdee59af" />
+
+Q is waiting for the edge of the clock.
+
+<img width="1115" height="114" alt="image" src="https://github.com/user-attachments/assets/5d76cb2e-e900-467e-a421-87bd3f79ce26" />
+
+<img width="1205" height="85" alt="image" src="https://github.com/user-attachments/assets/eca98612-4d85-4775-b030-62118336615e" />
+
+Q is “1” though out.
+For Sequential circuits we need to tell the tool by using this command: 
+
+<img width="663" height="29" alt="image" src="https://github.com/user-attachments/assets/4692986d-3215-4c13-824b-64caeefbed9d" />
+
+<img width="434" height="291" alt="image" src="https://github.com/user-attachments/assets/54b475d7-8910-49ab-bb78-265ddd66cda8" />
+
+<img width="1205" height="198" alt="image" src="https://github.com/user-attachments/assets/7d9b2673-bee2-40ba-aa2c-436fcd8c3597" />
+
+We have programmed an active high reset, but library is expecting an active low reset. So, the inverter is there.
+
+<img width="433" height="281" alt="image" src="https://github.com/user-attachments/assets/c7e90579-ae18-437e-a086-553f12243120" />
+
+<img width="354" height="288" alt="image" src="https://github.com/user-attachments/assets/46b0a317-3a06-44f1-a4ec-6f98c8a8b80a" />
+
+
+
+
+
+
+
 
 
 
