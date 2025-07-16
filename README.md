@@ -556,3 +556,18 @@ y = a ? (c ? b : 0) : 0
 <img width="586" height="373" alt="image" src="https://github.com/user-attachments/assets/0fc2335f-6afd-4b48-8772-b6b568d401b9" />
 
 <img width="240" height="158" alt="image" src="https://github.com/user-attachments/assets/ec6dc9a0-2595-4783-aa17-839637a6fba4" />
+
+<img width="579" height="230" alt="image" src="https://github.com/user-attachments/assets/1be1473a-19f9-4afc-bccd-d89c0fcd06a0" />
+
+<img width="537" height="124" alt="image" src="https://github.com/user-attachments/assets/68f47b18-b495-44e0-888a-1c25bf1323a4" />
+
+<img width="709" height="237" alt="image" src="https://github.com/user-attachments/assets/2c99e55c-5563-4774-990f-8e636799a0b7" />
+
+### CASE IV:
+
+<img width="528" height="63" alt="image" src="https://github.com/user-attachments/assets/3cd5074c-c572-4e67-b626-dd43e779f638" />
+
+<img width="192" height="125" alt="image" src="https://github.com/user-attachments/assets/717e540f-4f9c-407f-845b-02a6cfb11aad" />
+
+
+
