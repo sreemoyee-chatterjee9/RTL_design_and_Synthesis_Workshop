@@ -2,7 +2,7 @@
 
 ## 📘 Index
 
-- [Day 1: Introduction](#day-1-introduction)
+- [Day 1](#day-1-introduction)
 - [Day 2](#day-2-timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
 - [Day 3: Coming Soon](#day-3-coming-soon)
 
@@ -164,7 +164,51 @@ synth -top good_mux
 
 ## Day 2: Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
 
-### What is a simulator?
+### What is a .lib?
+
+- .lib is collection of our standard cells. It contains slow cells and fast cells.
+- It defines the timing, power, and area characteristics of these cells, enabling accurate timing analysis and synthesis during the chip design process. 
+<img width="596" height="121" alt="image" src="https://github.com/user-attachments/assets/d6fa9c14-5daf-4f20-b6db-cbda16702190" />
+
+### 🔹 PVT Corners and Library Characterization
+
+- `tt` → Typical process corner  
+- `025c` → Temperature (25°C)  
+- `1v8` → Indicates voltage (1.8V)
+
+- **PVT** stands for **Process, Voltage, Temperature**
+  - **Process** → Variation due to fabrication
+  - **Voltage** → Variation due to supply voltage
+  - **Temperature** → Variation due to thermal conditions
+
+These factors determine how the silicon will behave in different conditions.  
+Our **timing libraries** are characterized to model these **PVT variations** to ensure correct functionality across all expected conditions.
+<img width="435" height="145" alt="image" src="https://github.com/user-attachments/assets/c2078695-09d6-44c4-a8b1-fffe382d87b7" />
+<img width="363" height="96" alt="image" src="https://github.com/user-attachments/assets/df620a1b-994c-4d9f-8022-de35140e8be0" />
+<img width="310" height="131" alt="image" src="https://github.com/user-attachments/assets/dfc6fa0e-dc29-4b90-8b17-6733bb42f2d1" />
+
+### 🔹 Cell Flavours and Power Ports in Verilog
+
+- Different **flavours of cells** may exist in the library (e.g., low-power, high-speed variants)
+- **PP** stands for **Power Ports**
+
+---
+
+### 📦 Module Definition of a Cell in Verilog Models
+
+A cell in a standard cell library may be represented like this in Verilog:
+
+```verilog
+module AND2_X1 (
+  output Y,
+  input A,
+  input B,
+  input VDD,  // Power Port
+  input VSS   // Ground
+);
+  assign Y = A & B;
+endmodule
+
 
 
 
