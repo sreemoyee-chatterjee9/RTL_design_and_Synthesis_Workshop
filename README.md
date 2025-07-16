@@ -209,8 +209,48 @@ module AND2_X1 (
   assign Y = A & B;
 endmodule
 
+<img width="464" height="521" alt="image" src="https://github.com/user-attachments/assets/f49c2f10-2853-48d5-9826-08606afc4998" />
 
+<img width="1066" height="321" alt="image" src="https://github.com/user-attachments/assets/8e8c28a4-eb87-4928-8106-031c308ee1f0" />
 
+### 🔹 Impact of Transistor Size on Performance and Power
+
+Larger transistors offer faster switching speeds due to increased drive strength, but they also lead to **higher power consumption** and **increased delay** in some cases. This tradeoff is important in digital circuit design.
+
+---
+
+#### ⚡ Increased Drive Strength
+
+- **Wider transistors** can drive more current.
+- They **charge/discharge capacitive loads faster**, reducing gate delay.
+- Beneficial for speeding up signal transitions.
+
+---
+
+#### ⚠️ Increased Capacitance
+
+- Larger transistors have **higher gate capacitance**.
+- This added capacitance must be **charged/discharged** during switching.
+- Can **slow down preceding stages**, offsetting the speed advantage.
+
+---
+
+#### 🔋 Power Consumption
+
+- **Dynamic Power** increases due to the need to switch higher capacitance.
+  - More energy is required to toggle the gate.
+- **Leakage Power** also rises as wider transistors allow more **leakage current**, even in the off state.
+
+---
+
+#### 📌 Summary
+
+- There's a **tradeoff** between speed and power.
+- Wider transistors offer faster performance but at the cost of **higher energy consumption** and potential impact on **neighboring stages**.
+
+<img width="1205" height="507" alt="image" src="https://github.com/user-attachments/assets/a7d3c07d-3dc2-4a92-aa87-e83982e75350" />
+
+### 🔹 Hierarchical and Flat Synthesis
 
 
 
