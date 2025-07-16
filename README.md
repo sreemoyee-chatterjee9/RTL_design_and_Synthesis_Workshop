@@ -2,9 +2,10 @@
 
 ## 📘 Index
 
-- [Day 1](#day-1-introduction)
-- [Day 2](#day-2-timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
-- [Day 3](#day-3-combinational-logic-optimization)
+- [Day 1: Introduction](#day-1-introduction)
+- [Day 2: Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](#day-2-timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
+- [Day 3: Combinational and Sequential Logic Optimization](#day-3-combinational-and-sequential-logic-optimization)
+- [Day 4: Gate Level Simulation (GLS)](#day-4-gate-level-simulation-gls)
 
 ---
 
@@ -699,3 +700,26 @@ Using all 3bits of the counter now.
 
 <img width="887" height="302" alt="image" src="https://github.com/user-attachments/assets/878b63be-dc9e-4d7f-bab3-baaaaab239c9" />
 
+---
+
+## Day 4: Gate Level Simulation (GLS)
+
+### 🔍 What is Gate Level Simulation?
+- We validate the functionality of RTL code by testing it.
+- We give stimulus to the RTL design and check if the outputs match specifications.
+- This setup is called the **Testbench**.
+- Initially, **RTL Code** is the DUT (Design Under Test), and the Testbench injects stimulus and observes the output.
+- In GLS, we replace RTL with the **Netlist** as the DUT.
+- A **Netlist** is the synthesized version of RTL using standard cell gates — logically equivalent to RTL.
+- We run the testbench against the **Netlist** to validate correctness post-synthesis.
+
+### ❓ Why do we need GLS?
+- ✅ To check **logical correctness** after synthesis.
+- ✅ To validate **timing** for complex designs after synthesis.
+- ✅ GLS with **SDF annotation** (Standard Delay Format) helps simulate real gate/path delays:
+  - Detects **setup and hold violations**
+  - Identifies **race conditions** and **clock skew**
+- ✅ Detects **glitches** (short-lived, incorrect signals), especially in edge-sensitive logic.
+
+### 🧪 GLS using iVerilog
+(You can describe the step-by-step flow or commands here in a later section)
