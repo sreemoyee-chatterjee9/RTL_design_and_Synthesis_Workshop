@@ -196,18 +196,7 @@ Our **timing libraries** are characterized to model these **PVT variations** to 
 
 ### 📦 Module Definition of a Cell in Verilog Models
 
-A cell in a standard cell library may be represented like this in Verilog:
-
-```verilog
-module AND2_X1 (
-  output Y,
-  input A,
-  input B,
-  input VDD,  // Power Port
-  input VSS   // Ground
-);
-  assign Y = A & B;
-endmodule
+A cell in a standard cell library may be represented like this in Verilog.
 
 <img width="464" height="521" alt="image" src="https://github.com/user-attachments/assets/f49c2f10-2853-48d5-9826-08606afc4998" />
 
