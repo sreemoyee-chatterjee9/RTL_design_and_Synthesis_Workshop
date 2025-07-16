@@ -875,15 +875,24 @@ When using **blocking (`=`)** assignments inside `always` blocks, simulation may
 Using **blocking assignments** in sequential circuits can lead to **unexpected simulation results** or **incorrect synthesis**.
 
 ### ❌ Bad Example (Blocking Assignment):
+
 always @(posedge clk) begin
+  
   a = b;
+ 
   b = a;
+
 end
 
+
 ### ✅ Corrected Example (Non-blocking Assignment)::
+
 always @(posedge clk) begin
+
   a <= b;
+  
   b <= a;
+
 end
 
 <img width="568" height="124" alt="image" src="https://github.com/user-attachments/assets/4a99bfd7-e666-4856-bf70-6d3642761653" />
