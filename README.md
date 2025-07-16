@@ -721,5 +721,63 @@ Using all 3bits of the counter now.
   - Identifies **race conditions** and **clock skew**
 - ✅ Detects **glitches** (short-lived, incorrect signals), especially in edge-sensitive logic.
 
+
 ### 🧪 GLS using iVerilog
-(You can describe the step-by-step flow or commands here in a later section)
+<img width="886" height="394" alt="image" src="https://github.com/user-attachments/assets/68b4a8d5-cc20-47a5-b226-da4033be16a8" />
+
+<img width="886" height="550" alt="image" src="https://github.com/user-attachments/assets/c4ebeea8-57b6-4a2e-8aad-70213c99baa2" />
+
+## 🛠️ Synthesis vs Simulation Mismatch
+
+Sometimes, the synthesized netlist and simulated RTL behave differently due to certain coding issues. Common causes include:
+
+### ⚠️ Causes of Mismatch:
+- Missing sensitivity list
+- Improper use of blocking (`=`) vs non-blocking (`<=`) assignments
+- Non-standard Verilog coding practices
+
+---
+
+### 📌 Example: Missing Sensitivity List
+- The simulator operates based on signal **activity**.
+- If a signal is not included in the sensitivity list, the simulator won’t evaluate the block when that signal changes.
+- 🔁 **No activity → No evaluation → Incorrect simulation results**
+
+<img width="908" height="522" alt="image" src="https://github.com/user-attachments/assets/8b04a155-a180-4a7c-b0ba-63d0eac10f5a" />
+
+<img width="668" height="355" alt="image" src="https://github.com/user-attachments/assets/dfb730c1-a636-49d2-9a76-616711c939b9" />
+
+
+## ⚔️ Blocking vs Non-Blocking Assignments
+
+This is a crucial concept when using the `always` block in Verilog.
+
+### 🧱 Blocking Assignment (`=`)
+- Executes **in the order** the statements are written — like in C programming.
+- One statement **blocks** the execution of the next until it's completed.
+- Example behavior: First line is executed → then second line → and so on.
+
+### ⚡ Non-Blocking Assignment (`<=`)
+- **Right-hand side (RHS)** of all statements is evaluated **first**.
+- Then assignments are **executed in parallel**.
+- The order of statements **does not affect** the final outcome (ideal for sequential logic like flops).
+
+<img width="175" height="101" alt="image" src="https://github.com/user-attachments/assets/839e6308-d453-4fd6-a075-6f732933f50a" />
+
+---
+
+### 🚧 Caveats of Blocking Assignments
+
+**Example Goal**: Creating a shift register.
+
+> ❌ If you use blocking assignments (`=`), values may be overwritten in the same simulation cycle because each statement updates immediately.
+
+> ✅ For sequential logic like shift registers, **non-blocking (`<=`) assignments are recommended** to ensure correct clocked behavior.
+
+---
+
+### 🧪 Summary
+| Assignment Type | Symbol | Execution Style      | Use Case               |
+|-----------------|--------|----------------------|------------------------|
+| Blocking        | `=`    | Sequential (step-by-step) | Combinational logic (sometimes) |
+| Non-Blocking    | `<=`   | Parallel (event-driven)   | Clocked logic (flip-flops, registers) |
