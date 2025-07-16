@@ -44,3 +44,28 @@ II. Test Bench (TB) does **not** have a Primary Input or Primary Output.
 ### iVerilog Based Simulation Flow:
 <img width="744" height="354" alt="image" src="https://github.com/user-attachments/assets/e39e14fa-b0ff-4c44-beb6-1f00186be3eb" />
 
+### Labs using iverilog and gtkwave:
+Design files and the corresponding testbench files are inside the Verilog_files directory.
+**Command:** iverilog <design name *.v file> <associated test_bench tb_*.v>
+**Output:** a.out file
+When we execute the output file, vcd file gets dumped. File format: tb_<design_name>.vcd
+This vcd file needs to be loaded in the simulator.
+gtkwave <vcd file>
+Uut: unit under test
+
+---
+
+### Introduction to YOSYS:
+**Synthesizer:** Tool used for converting the RTL to netlist
+Yosys is the synthesizer tool.
+<img width="661" height="354" alt="image" src="https://github.com/user-attachments/assets/218cb562-10bc-4d41-8be2-edc43a6a2cdf" />
+<u>Verify the Synthesis output:</u>
+<img width="623" height="354" alt="image" src="https://github.com/user-attachments/assets/eac2697a-69ec-4398-ace5-36b9c7ac59f4" />
+
+---
+
+**Logic Synthesis:**
+<u>RTL Design:</u>
+* It is the behavioural representation of the required specification:
+
+
