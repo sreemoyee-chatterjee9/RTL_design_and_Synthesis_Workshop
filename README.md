@@ -450,4 +450,37 @@ As no standard cells are there, there is no need of abc -liberty
     - Systematic and programmable.
 
 ---
+<img width="1205" height="611" alt="image" src="https://github.com/user-attachments/assets/a9467e06-433a-490e-9e1a-f8964958a250" />
 
+### Boolean Optimization:
+
+<img width="1005" height="673" alt="image" src="https://github.com/user-attachments/assets/dc60dcef-1922-4621-8c4f-66842fbfc183" />
+
+---
+
+### 🔧 Why Sequential Logic Optimization?
+
+Sequential logic circuits include memory elements (like flip-flops). Optimizing them improves **performance**, **area**, and **power consumption** in clocked designs.
+
+---
+
+### 🔹 Techniques
+
+#### 🔸 Technique 1: Sequential Constant Propagation
+
+- Identifies and removes unused or constant flip-flop outputs.
+- Similar to combinational constant propagation, but across clock cycles.
+
+#### 🔸 Technique 2: Advanced Techniques
+
+- 🧠 **State Optimization**
+  - Reduces the number of states in FSMs (Finite State Machines).
+  - Combines equivalent or redundant states to minimize logic.
+
+- ⏱️ **Retiming**
+  - Moves flip-flops across combinational logic to optimize timing (reduce critical path).
+  - Can help balance pipeline stages.
+
+- 🧬 **Sequential Logic Cloning**
+  - Duplicates logic for performance improvement.
+  - Used to break timing bottlenecks by replicating logic paths.
