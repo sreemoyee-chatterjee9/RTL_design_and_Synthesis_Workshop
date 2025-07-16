@@ -92,8 +92,10 @@ RTL Design:
 
 <img width="1050" height="788" alt="image" src="https://github.com/user-attachments/assets/64c19244-d5ec-4cbd-84eb-bd49f68e12bb" />
 
+
 The current carrying capability of a transistor is a function of its width. Wider transistor, low delay, more power, more area.
-## Setup Time and Hold Time
+
+---
 
 ### 🔹 Setup Time
 
@@ -118,3 +120,16 @@ The current carrying capability of a transistor is a function of its width. Wide
 
 - **Violation**:  
   If the input data changes too soon after the clock edge (within the hold time), the flip-flop might not latch the intended value.
+
+---
+
+### 🔹 Propagation Delay
+
+- **Definition**:  
+  Propagation delay refers to the time it takes for a signal to travel from the **input** of a logic gate or circuit to its **output**, specifically when the output changes from one logic state to another.
+
+- **Details**:  
+  It is the delay between a change at the input and the corresponding change at the output.  
+  This delay is typically **measured at the 50% voltage point** of the signal transition (i.e., when the signal crosses half of its full swing).
+
+
