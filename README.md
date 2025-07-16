@@ -133,3 +133,43 @@ The current carrying capability of a transistor is a function of its width. Wide
   This delay is typically **measured at the 50% voltage point** of the signal transition (i.e., when the signal crosses half of its full swing).
 
 
+---
+
+### 🔹 LAB
+
+<img width="1129" height="815" alt="image" src="https://github.com/user-attachments/assets/6130a530-e30d-4026-8cfe-0d11d5282477" />
+
+<img width="915" height="294" alt="image" src="https://github.com/user-attachments/assets/8de84654-87c6-4dd3-9bca-00e79c7859cc" />
+
+<img width="648" height="153" alt="image" src="https://github.com/user-attachments/assets/2c0df8ea-49b7-474c-ad97-60ad39c7f43b" />
+
+synth -top good_mux
+
+<img width="634" height="433" alt="image" src="https://github.com/user-attachments/assets/75c83f6a-4f5c-4c02-8c8b-e5cfb6e05470" />
+
+<img width="635" height="40" alt="image" src="https://github.com/user-attachments/assets/32a2a28a-26f6-4cb0-993a-accadff61ff3" />
+
+<img width="708" height="189" alt="image" src="https://github.com/user-attachments/assets/d7d3f9d3-a51b-4fb8-98b9-e5e13da919e0" />
+
+<img width="1205" height="391" alt="image" src="https://github.com/user-attachments/assets/65e53f5f-7287-4bdc-879e-7df55a11f113" />
+
+<img width="421" height="178" alt="image" src="https://github.com/user-attachments/assets/38ae491c-5e3c-4a81-91ac-a1dfba6de77e" />
+
+<img width="1003" height="784" alt="image" src="https://github.com/user-attachments/assets/84cf496d-60c6-4a03-a131-bec158fbd77b" />
+
+<img width="559" height="183" alt="image" src="https://github.com/user-attachments/assets/008f5c15-a5a5-4e62-b5dd-0fccec05001f" />
+
+<img width="1063" height="575" alt="image" src="https://github.com/user-attachments/assets/56ff0128-3454-421d-8f2e-e6f632aff62e" />
+
+
+
+
+
+
+
+
+
+
+
+
+
