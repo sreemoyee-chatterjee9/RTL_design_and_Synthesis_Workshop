@@ -4,7 +4,7 @@
 
 - [Day 1](#day-1-introduction)
 - [Day 2](#day-2-timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
-- [Day 3: Coming Soon](#day-3-coming-soon)
+- [Day 3](#day-3-combinational-logic-optimization)
 
 ---
 
@@ -399,3 +399,40 @@ Sync reset is higher priority that D as D is in the else portion.
 <img width="731" height="289" alt="image" src="https://github.com/user-attachments/assets/942fb653-1df0-4e9c-b168-ef962c6ce856" />
 
 <img width="575" height="177" alt="image" src="https://github.com/user-attachments/assets/2ffcaa36-e0b1-49b6-b636-e2011701737a" />
+
+<img width="363" height="289" alt="image" src="https://github.com/user-attachments/assets/1260500a-7cfe-46dd-8c6a-8292a70cd73a" />
+
+<img width="256" height="158" alt="image" src="https://github.com/user-attachments/assets/27a940ef-92e2-4f8a-843c-2fec1c6c8c8e" />
+
+<img width="865" height="207" alt="image" src="https://github.com/user-attachments/assets/88432db6-3579-48dd-b2cb-9756dfa4073a" />
+
+<img width="613" height="228" alt="image" src="https://github.com/user-attachments/assets/36264117-c7d9-4df4-a3f3-befe912ef5e2" />
+
+As no standard cells are there, there is no need of abc -liberty
+
+<img width="746" height="179" alt="image" src="https://github.com/user-attachments/assets/a285d6dd-9d22-4294-8738-dccf476683de" />
+
+<img width="196" height="120" alt="image" src="https://github.com/user-attachments/assets/fc65edc6-322f-4c4b-9a0b-4a75ce02215c" />
+
+---
+
+## Day 3: Combinational Logic Optimization
+
+### 🔹 Why Optimization?
+
+- To **squeeze** the logic to its most **efficient** and **optimized** form.
+- Main goals:
+  - ✅ **Area savings** (reduce gate count, layout area)
+  - ✅ **Power savings** (lower switching activity and capacitance)
+
+---
+
+### 🔧 Optimization Techniques
+
+#### 🔸 Technique 1: Constant Propagation
+
+- Basic direct optimization.
+- Replaces expressions where constants are involved.
+- Example:
+  ```verilog
+  assign y = a & 1'b0;  // Can be reduced to y = 1'b0
