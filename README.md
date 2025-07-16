@@ -909,6 +909,8 @@ end
 
 <img width="547" height="177" alt="image" src="https://github.com/user-attachments/assets/d2fb155a-8a8f-415b-b647-a37698989d7b" />
 
+-	It is looking at the latest value.
+
 <img width="1205" height="417" alt="image" src="https://github.com/user-attachments/assets/7684dc47-b826-44db-bb8e-bd1754a52e5d" />
 
 ### 🔍 Root Cause:
