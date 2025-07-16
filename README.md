@@ -34,3 +34,13 @@
 <img width="730" height="354" alt="image" src="https://github.com/user-attachments/assets/e1b36b8e-129d-4e0e-9b66-99838af8ddab" />
 
 ---
+### Conditions:
+
+I. Design may have **one or more primary inputs**, and **one or more primary outputs**.  
+II. Test Bench (TB) does **not** have a Primary Input or Primary Output.
+
+---
+
+### iVerilog Based Simulation Flow:
+<img width="744" height="354" alt="image" src="https://github.com/user-attachments/assets/e39e14fa-b0ff-4c44-beb6-1f00186be3eb" />
+
