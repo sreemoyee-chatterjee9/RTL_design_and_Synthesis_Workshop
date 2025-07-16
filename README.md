@@ -3,7 +3,7 @@
 ## 📘 Index
 
 - [Day 1: Introduction](#day-1-introduction)
-- [Day 2: Coming Soon](#day-2-coming-soon)
+- [Day 2](#day-2-timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
 - [Day 3: Coming Soon](#day-3-coming-soon)
 
 ---
@@ -162,6 +162,9 @@ synth -top good_mux
 <img width="1063" height="575" alt="image" src="https://github.com/user-attachments/assets/56ff0128-3454-421d-8f2e-e6f632aff62e" />
 
 
+## Day 2: Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
+
+### What is a simulator?
 
 
 
