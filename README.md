@@ -516,3 +516,9 @@ Sequential logic circuits include memory elements (like flip-flops). Optimizing 
  
 <img width="771" height="709" alt="image" src="https://github.com/user-attachments/assets/6f7a1f6e-78b3-459e-9c83-e47ef5086b8f" />
 <img width="560" height="709" alt="image" src="https://github.com/user-attachments/assets/0b639bc2-632c-473b-b627-63df8f1663dd" />
+
+### LAB: Combinational Logic Optimisations: CASE I 
+
+<img width="706" height="209" alt="image" src="https://github.com/user-attachments/assets/5602b0f3-d683-4f4b-b7c0-7e365a22b28c" />
+
+
