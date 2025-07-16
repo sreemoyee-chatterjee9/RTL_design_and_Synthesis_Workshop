@@ -603,8 +603,11 @@ y = c OR (b AND n1) = c OR ab
 <img width="1205" height="351" alt="image" src="https://github.com/user-attachments/assets/c1fa54d5-080f-416a-a85f-58fd83f9b3bf" />
 
 ### 🔸 DFF_CONST1
+
 <img width="591" height="278" alt="image" src="https://github.com/user-attachments/assets/ef4d1669-d1af-42d8-9232-48d70c93b86a" />
+
 ### 🔸 DFF_CONST2
+
 <img width="591" height="271" alt="image" src="https://github.com/user-attachments/assets/8bb14587-4748-4bfb-bb47-eaaa257eea5c" />
 
 <img width="1116" height="135" alt="image" src="https://github.com/user-attachments/assets/7aab17b0-b58f-41a1-9592-600c0600221c" />
