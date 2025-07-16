@@ -365,10 +365,38 @@ There are specific benefits to synthesizing submodules separately rather than sy
 
 Sync reset is higher priority that D as D is in the else portion.
 
-Synthesize these sync/async set/reset designs:
+### Synthesize these sync/async set/reset designs:
 
 <img width="865" height="478" alt="image" src="https://github.com/user-attachments/assets/3f661a3b-c792-45f6-861b-cb567c94580d" />
 
 <img width="451" height="296" alt="image" src="https://github.com/user-attachments/assets/8c83a853-3f00-4200-8f3f-9a7fdf591ae6" />
 
 <img width="706" height="40" alt="image" src="https://github.com/user-attachments/assets/b21c1672-b9bc-44c3-a364-1142fb38f961" />
+
+<img width="1084" height="658" alt="image" src="https://github.com/user-attachments/assets/9896980b-652f-43fc-9212-374523d841b5" />
+
+<img width="621" height="40" alt="image" src="https://github.com/user-attachments/assets/8bc59736-f5c3-42be-bf54-f763d7e87d34" />
+
+<img width="584" height="139" alt="image" src="https://github.com/user-attachments/assets/fbb82dfc-db45-46c0-913d-e5c983a80fa8" />
+
+<img width="1205" height="188" alt="image" src="https://github.com/user-attachments/assets/63fb6855-34ab-445e-aba1-ecc13e58ba9a" />
+
+<img width="1205" height="194" alt="image" src="https://github.com/user-attachments/assets/d806e294-832b-490f-b04c-cf9e676d4e07" />
+
+### Synchronous Reset:
+
+<img width="1205" height="244" alt="image" src="https://github.com/user-attachments/assets/3ada6965-b66a-47b6-8c09-bf7fb943c55b" />
+
+| Signal | Meaning        |
+|--------|----------------|
+| B_N    | Inverted B     |
+
+### OPTIMIZATION:
+
+<img width="435" height="59" alt="image" src="https://github.com/user-attachments/assets/28fb9caf-4686-47b6-9354-d11a43050765" />
+
+<img width="530" height="471" alt="image" src="https://github.com/user-attachments/assets/211a04d9-c2f3-4bc5-929d-8d56dd9b41d5" />
+
+<img width="731" height="289" alt="image" src="https://github.com/user-attachments/assets/942fb653-1df0-4e9c-b168-ef962c6ce856" />
+
+<img width="575" height="177" alt="image" src="https://github.com/user-attachments/assets/2ffcaa36-e0b1-49b6-b636-e2011701737a" />
