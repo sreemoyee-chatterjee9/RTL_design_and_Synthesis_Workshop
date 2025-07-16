@@ -241,10 +241,37 @@ Larger transistors offer faster switching speeds due to increased drive strength
 
 ### 🔹 Hierarchical and Flat Synthesis
 
+<img width="696" height="246" alt="image" src="https://github.com/user-attachments/assets/315add08-c9bd-4c31-849f-3bf9c24007e5" />
+<img width="440" height="354" alt="image" src="https://github.com/user-attachments/assets/44f5cca0-be29-492f-9202-1d196ce67675" />
+<img width="748" height="329" alt="image" src="https://github.com/user-attachments/assets/0756e80e-8f7b-4754-977d-6733220a9eef" />
+<img width="408" height="996" alt="image" src="https://github.com/user-attachments/assets/ffc891c5-4451-4e9c-ab26-f6ce3a1e8283" />
+<img width="628" height="44" alt="image" src="https://github.com/user-attachments/assets/61b00a35-62bf-4484-9e69-589e42962605" />
+<img width="296" height="39" alt="image" src="https://github.com/user-attachments/assets/e2c2c579-67f1-4159-aef7-a14501ef6f53" />
+### Hierarchical Design:
+<img width="1205" height="265" alt="image" src="https://github.com/user-attachments/assets/a540489f-f76a-43a2-8d3f-b1eacc0033b0" />
+<img width="553" height="238" alt="image" src="https://github.com/user-attachments/assets/d343f28d-18b5-490c-8cab-9f37d4577a15" />
+<img width="389" height="1016" alt="image" src="https://github.com/user-attachments/assets/1522e6a6-2756-495f-a139-4dcde0fa054f" />
+- **Hierarchical Synthesis**:
+  - ➤ Hierarchies are **preserved** during synthesis.
+  - ➤ Useful for managing large designs in a modular way.
 
+- **Flat Synthesis**:
+  - ➤ All module hierarchies are **flattened** into a single-level netlist.
+  - ➤ The synthesis tool **may implement NAND gates** instead of AND gates with stacked PMOS transistors.
+  - ➤ This is because **stacked PMOS is avoided** due to its **poor mobility**.
 
+- **Command to Flatten Hierarchy**:
+    flatten
 
+<img width="531" height="271" alt="image" src="https://github.com/user-attachments/assets/c39b6c33-d14e-415e-89f2-bcc599113434" />
+<img width="759" height="773" alt="image" src="https://github.com/user-attachments/assets/9d4cc285-97fc-4167-9fa1-73e31d115a9b" />
+<img width="1205" height="172" alt="image" src="https://github.com/user-attachments/assets/2f38dfab-4be6-4daa-aff4-86ae3a2913c2" />
 
+- **Flat Synthesis**:
+  - ➤ All module hierarchies are **flattened** into a single-level netlist.
+  - ➤ The synthesis tool **may implement NAND gates** instead of AND gates with stacked PMOS transistors.
+  - ➤ This is because **stacked PMOS is avoided** due to its **poor mobility**.
+  - ➤ **Whole structure = whole netlist**: The entire design is synthesized as one unified block.
 
 
 
