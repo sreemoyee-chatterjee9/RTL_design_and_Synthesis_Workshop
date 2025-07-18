@@ -6,7 +6,7 @@
 - [Day 2: Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](#day-2-timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
 - [Day 3: Combinational and Sequential Logic Optimization](#day-3-combinational-and-sequential-logic-optimization)
 - [Day 4: Gate Level Simulation (GLS)](#day-4-gate-level-simulation-gls)
-
+- [Day 5: IF-CASE Constructs](#day-5-if-case-constructs)
 ---
 
 ## Day 1: Introduction
@@ -919,3 +919,5 @@ end
 - ⚠️ This breaks time-dependent behavior like shift registers or counters.
 
 ---
+
+## Day 5: IF-CASE Constructs
