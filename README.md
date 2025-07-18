@@ -931,3 +931,17 @@ end
   - It will **retain the previous value of `y`**.
  
 
+<img width="960" height="645" alt="image" src="https://github.com/user-attachments/assets/80f70228-576d-40f0-8c6c-d4a3f44ed9d0" />
+
+
+<img width="822" height="411" alt="image" src="https://github.com/user-attachments/assets/0e0b5f36-cd1a-4207-af97-0c7cc0402077" />
+
+
+<img width="823" height="715" alt="image" src="https://github.com/user-attachments/assets/e0d13446-1942-4cd5-a334-3e1c42e0a7f8" />
+
+
+<img width="850" height="512" alt="image" src="https://github.com/user-attachments/assets/58ccfbd0-cfde-4a4b-8f64-d5c0e07ef73e" />
+
+
+<img width="980" height="357" alt="image" src="https://github.com/user-attachments/assets/cc38bff9-0f39-4e51-aeaf-a68aefd3556e" />
+
