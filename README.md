@@ -945,3 +945,126 @@ end
 
 <img width="980" height="357" alt="image" src="https://github.com/user-attachments/assets/cc38bff9-0f39-4e51-aeaf-a68aefd3556e" />
 
+
+
+### LAB Work: Incomplete If:
+
+<img width="584" height="125" alt="image" src="https://github.com/user-attachments/assets/bf58edfd-c276-4b84-aef1-9b4fcac07ec3" />
+
+
+<img width="366" height="187" alt="image" src="https://github.com/user-attachments/assets/291bfca2-3aab-4c99-9621-749c2972835e" />
+
+
+- An `if` statement always translates into a **multiplexer (mux)** in hardware.
+- If **no `else` part** is mentioned, the output signal (`y`) will **latch on** to its previous value.
+- This results in the inference of a **D latch** (level-sensitive, typically **posedge**).
+
+<img width="1090" height="123" alt="image" src="https://github.com/user-attachments/assets/2f3a208b-64c9-4862-aecb-5df21ec1a560" />
+
+<img width="1205" height="151" alt="image" src="https://github.com/user-attachments/assets/22d007fb-3d12-4766-9253-8e8bbfe6381e" />
+
+<img width="723" height="283" alt="image" src="https://github.com/user-attachments/assets/0665ce9d-d686-4686-9d4d-dd2aaad9844b" />
+
+<img width="426" height="303" alt="image" src="https://github.com/user-attachments/assets/86f69e98-58b7-4c83-b97e-e698a78d2b08" />
+
+<img width="531" height="254" alt="image" src="https://github.com/user-attachments/assets/ab47224b-0763-45f2-ab6c-245accf25a54" />
+
+- Inferred latch coming out of incomplete if.
+
+
+### Incomplete If 2:
+
+<img width="676" height="165" alt="image" src="https://github.com/user-attachments/assets/7b5da3e9-576c-480c-a86d-5bbb3fd1b957" />
+
+<img width="513" height="331" alt="image" src="https://github.com/user-attachments/assets/d1cf9570-1ef9-4aa1-bbf8-ff8a75f8799e" />
+
+<img width="295" height="150" alt="image" src="https://github.com/user-attachments/assets/446fed0d-191f-4f03-aa3b-7d075921c583" />
+
+<img width="1114" height="121" alt="image" src="https://github.com/user-attachments/assets/0b12db10-f732-4d80-a8b6-c0fd575bb4c4" />
+
+<img width="1205" height="124" alt="image" src="https://github.com/user-attachments/assets/08a06d21-f91b-4cba-90e9-8f9e89a12e4c" />
+
+<img width="1205" height="136" alt="image" src="https://github.com/user-attachments/assets/4385e958-69f4-4182-8ee4-2b8b8b0c2eb7" />
+
+<img width="733" height="303" alt="image" src="https://github.com/user-attachments/assets/9e16250b-1c43-4011-bc60-c916a80dc093" />
+
+<img width="421" height="345" alt="image" src="https://github.com/user-attachments/assets/10853516-7e54-43b4-8683-0442c89ee4d9" />
+
+<img width="1205" height="291" alt="image" src="https://github.com/user-attachments/assets/13c39ede-dd77-4a8c-b00d-59a6d57a4643" />
+
+
+### Incomplete cases:
+
+<img width="753" height="154" alt="image" src="https://github.com/user-attachments/assets/353e6a0b-ab3d-4844-8eb4-77a30047757d" />
+
+<img width="531" height="456" alt="image" src="https://github.com/user-attachments/assets/8870ec95-2034-407c-8a7c-db50c0ba4f2b" />
+
+<img width="1134" height="121" alt="image" src="https://github.com/user-attachments/assets/8aec12f1-60d8-40e7-8f29-db75074f2782" />
+
+<img width="1205" height="184" alt="image" src="https://github.com/user-attachments/assets/58a34d68-ee8e-4eda-b5ed-47525124bd0d" />
+
+<img width="1205" height="181" alt="image" src="https://github.com/user-attachments/assets/bdaa9663-2f39-4ce9-8d50-23d3a9d5e213" />
+
+<img width="728" height="298" alt="image" src="https://github.com/user-attachments/assets/c6f201a3-b8e6-4dea-837a-19f8a132e304" />
+
+<img width="395" height="384" alt="image" src="https://github.com/user-attachments/assets/e63675ef-44a7-4829-8f9b-fa6e0e446f35" />
+
+<img width="1205" height="220" alt="image" src="https://github.com/user-attachments/assets/9fef7866-ce38-40a7-82e6-00cc991e87db" />
+
+
+### Complete Case:
+
+<img width="728" height="183" alt="image" src="https://github.com/user-attachments/assets/7a8ae58d-f67c-455a-8645-e1c058fbbb51" />
+
+<img width="331" height="340" alt="image" src="https://github.com/user-attachments/assets/3eb72534-bb50-4def-9fc9-1f4ae54ac2e8" />
+
+<img width="331" height="340" alt="image" src="https://github.com/user-attachments/assets/88377d21-42af-4525-b25c-46d3f319e7fb" />
+
+<img width="1205" height="152" alt="image" src="https://github.com/user-attachments/assets/da357d89-5621-42a2-bd5a-fd4e0273b21b" />
+
+<img width="731" height="290" alt="image" src="https://github.com/user-attachments/assets/1fc0e32f-37e1-4db8-8e5e-3a984621b36c" />
+
+<img width="401" height="379" alt="image" src="https://github.com/user-attachments/assets/fd3b13bb-bf4c-46dc-b6c8-395baa5e1092" />
+
+<img width="1205" height="225" alt="image" src="https://github.com/user-attachments/assets/1940b6b2-8d7e-4adb-98ef-ab37a2d1f259" />
+
+- This is Complete combinational gates.
+
+
+### Partial Case:
+
+<img width="959" height="273" alt="image" src="https://github.com/user-attachments/assets/2521bfb3-dc0c-40d2-9070-b41bde92060c" />
+
+<img width="531" height="402" alt="image" src="https://github.com/user-attachments/assets/dad4c7fd-e122-47dd-92b9-923bcff3629f" />
+
+<img width="739" height="285" alt="image" src="https://github.com/user-attachments/assets/0a0cee86-f7d9-4221-9fc9-d9a1ae7e04ba" />
+
+<img width="406" height="421" alt="image" src="https://github.com/user-attachments/assets/27d97b52-bdd7-4f08-94bf-e118472947b4" />
+
+<img width="1205" height="393" alt="image" src="https://github.com/user-attachments/assets/ed975b5b-ad7f-40e8-ae8a-aa8de5ed169b" />
+
+- One latch because of X.
+- There will be no latch for Y.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
