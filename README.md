@@ -947,7 +947,8 @@ end
 
 
 
-### LAB Work: Incomplete If:
+### LAB Work: 
+### 🧪 Incomplete If:
 
 <img width="584" height="125" alt="image" src="https://github.com/user-attachments/assets/bf58edfd-c276-4b84-aef1-9b4fcac07ec3" />
 
@@ -972,7 +973,7 @@ end
 - Inferred latch coming out of incomplete if.
 
 
-### Incomplete If 2:
+### 🧪 Incomplete If 2:
 
 <img width="676" height="165" alt="image" src="https://github.com/user-attachments/assets/7b5da3e9-576c-480c-a86d-5bbb3fd1b957" />
 
@@ -993,7 +994,7 @@ end
 <img width="1205" height="291" alt="image" src="https://github.com/user-attachments/assets/13c39ede-dd77-4a8c-b00d-59a6d57a4643" />
 
 
-### Incomplete cases:
+### 🧪 Incomplete cases:
 
 <img width="753" height="154" alt="image" src="https://github.com/user-attachments/assets/353e6a0b-ab3d-4844-8eb4-77a30047757d" />
 
@@ -1012,7 +1013,7 @@ end
 <img width="1205" height="220" alt="image" src="https://github.com/user-attachments/assets/9fef7866-ce38-40a7-82e6-00cc991e87db" />
 
 
-### Complete Case:
+### 🧪 Complete Case:
 
 <img width="728" height="183" alt="image" src="https://github.com/user-attachments/assets/7a8ae58d-f67c-455a-8645-e1c058fbbb51" />
 
@@ -1031,7 +1032,7 @@ end
 - This is Complete combinational gates.
 
 
-### Partial Case:
+### 🧪 Partial Case:
 
 <img width="959" height="273" alt="image" src="https://github.com/user-attachments/assets/2521bfb3-dc0c-40d2-9070-b41bde92060c" />
 
@@ -1047,10 +1048,40 @@ end
 - There will be no latch for Y.
 
 
+### 🧪 BAD CASE:
+
+<img width="796" height="229" alt="image" src="https://github.com/user-attachments/assets/cc6213b4-3d56-48e2-b95e-233a765d1d4a" />
+
+### Overlapping Case Conditions:
+
+- When `select` becomes `11`, it will get executed **as well as** for `10`.
+- The condition `10` **matches two cases**, which **confuses the simulator**.
+- This leads to **synthesis-simulation mismatches**.
+- ⚠️ This is called an **overlapping condition** and should be avoided in properly written `case` statements.
+
+<img width="1084" height="115" alt="image" src="https://github.com/user-attachments/assets/524e08d2-808a-4419-8b42-0718295e48e7" />
+
+<img width="1205" height="165" alt="image" src="https://github.com/user-attachments/assets/41ab8969-94a7-4909-9e4b-7daf50bcbf70" />
+
+<img width="531" height="192" alt="image" src="https://github.com/user-attachments/assets/4f0bfa59-6781-418c-b27f-18164a0bfdd8" />
+
+<img width="266" height="247" alt="image" src="https://github.com/user-attachments/assets/82f24f40-42e7-4237-a561-86ce90f6e885" />
+
+<img width="531" height="257" alt="image" src="https://github.com/user-attachments/assets/bf316ad6-0c5c-4461-a33a-c75cec9d3890" />
+
+<img width="1205" height="211" alt="image" src="https://github.com/user-attachments/assets/0b705fcc-3dfe-4683-9cc6-fdedd998c6b7" />
+
+<img width="1205" height="147" alt="image" src="https://github.com/user-attachments/assets/1269264e-86de-490b-8622-0e28c1e12e08" />
+
+### ✅ Proper Case Coding Practice:
+
+- All the **legs of the `case` statement should be mutually exclusive**.
+- This is the **correct way to code** and will **prevent synthesis-simulation mismatches**.
 
 
+### 🔁 Looping Constructs
 
-
+<img width="1199" height="1159" alt="image" src="https://github.com/user-attachments/assets/9f8acdf6-996e-45da-9a4d-6d1d9d996df4" />
 
 
 
