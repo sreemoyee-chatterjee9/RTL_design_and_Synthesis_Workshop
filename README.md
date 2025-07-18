@@ -1128,17 +1128,66 @@ end
 
 <img width="1205" height="265" alt="image" src="https://github.com/user-attachments/assets/e86306c2-e763-4803-8e03-4e5cd56fdbd7" />
 
+<img width="1205" height="148" alt="image" src="https://github.com/user-attachments/assets/0b922693-75e3-446c-8e48-5f5bbb075495" />
+
+
+### 🔀 Demultiplexer (DEMUX):
+
+<img width="1205" height="324" alt="image" src="https://github.com/user-attachments/assets/fca8dcd0-a350-4980-b38e-857a8c038ca7" />
+
+
+A **demultiplexer (DEMUX)** is a digital circuit that receives a single input and routes it to one of several possible output lines, based on the value of control signals. Essentially, it distributes a single input signal to multiple destinations.
+
+- **Single Input, Multiple Outputs**  
+  A demultiplexer takes a single data input and a set of control signals (also called select lines).
+
+- **Control Signal Selection**  
+  The control signals determine which of the multiple output lines the input signal will be routed to.
+
+- **Data Distribution**  
+  The demultiplexer acts as a data distributor, sending the input signal to a specific output based on the control input.
+
+- **Opposite of a Multiplexer**  
+  While a multiplexer (MUX) selects one input from many, a demultiplexer sends one input to one of many outputs.
+
+- **Applications**  
+  Used in routing data, memory addressing, and converting serial data into parallel form.
+
+> 💡 Here, we are going to use the power of **blocking assignments**.
+
+
+### Using **FOR** Loop:
+
+<img width="354" height="584" alt="image" src="https://github.com/user-attachments/assets/c97506f2-01a9-4dbb-abee-7d3f9603a8d6" />
+
+<img width="1109" height="153" alt="image" src="https://github.com/user-attachments/assets/0059cb24-c921-4614-a747-ba52a80e1c70" />
+
+<img width="1205" height="234" alt="image" src="https://github.com/user-attachments/assets/39caa0db-3e92-4326-b344-3deece831639" />
+
+<img width="1188" height="103" alt="image" src="https://github.com/user-attachments/assets/9f331e4a-64fb-4f53-9d1f-bd133392c53b" />
+
+
+### 🧪 Result for `demux_generate`: `[this is For Loop]`
+
+<img width="1131" height="413" alt="image" src="https://github.com/user-attachments/assets/8065cb31-8ead-47f2-92d8-2f1e7c0fc835" />
+
+<img width="531" height="219" alt="image" src="https://github.com/user-attachments/assets/f8a5d177-dc00-486a-a66e-94e8d2b2945a" />
+<img width="231" height="219" alt="image" src="https://github.com/user-attachments/assets/265755ef-e717-4748-851b-5fdd6599131c" />
+
+
+<img width="531" height="495" alt="image" src="https://github.com/user-attachments/assets/29c02042-7227-4bf9-98d4-a16a224ea93b" />
+
+<img width="1205" height="281" alt="image" src="https://github.com/user-attachments/assets/d3cbef7a-5b16-4bbc-a81b-1dbb297505e9" />
+
+
+<img width="1205" height="368" alt="image" src="https://github.com/user-attachments/assets/544616d2-25c2-466e-a13c-f2c345e1f58b" />
 
 
 
+### 🔢 Ripple Carry Addition (RCA)
 
 
-
-
-
-
-
-
+<img width="709" height="836" alt="image" src="https://github.com/user-attachments/assets/3065b678-c3b3-4bbe-93de-f4bc7d0c82b1" />
 
 
 
