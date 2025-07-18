@@ -1191,4 +1191,45 @@ A **demultiplexer (DEMUX)** is a digital circuit that receives a single input an
 
 
 
+### Full Adder:
 
+<img width="573" height="66" alt="image" src="https://github.com/user-attachments/assets/19f5d56c-a9cf-4ef9-97c0-0553d8d6fbd2" />
+
+
+### Ripple Carry Adder:
+
+<img width="894" height="291" alt="image" src="https://github.com/user-attachments/assets/add3293c-5fc7-4957-af68-bb7cfea45b07" />
+
+### ➕ Rule for Addition
+
+- **N-bit + N-bit** ➝ Result: **N+1 bits**
+- **N-bit + M-bit** ➝ Result: **max(N, M) + 1 bits**
+
+<img width="1028" height="126" alt="image" src="https://github.com/user-attachments/assets/95648636-e6e0-4434-9901-2933c94908da" />
+
+
+├── fa.v      # Full Adder module definition
+├── rca.v     # Ripple Carry Adder that instantiates the Full Adder
+├── tb_rca.v  # Testbench for RCA
+
+
+<img width="1205" height="81" alt="image" src="https://github.com/user-attachments/assets/8a3d3bfb-3d41-41a5-b0e4-5e576234b4f1" />
+
+<img width="531" height="333" alt="image" src="https://github.com/user-attachments/assets/f6f138e7-9fd6-4282-a373-0bc8c6f63d4f" />
+
+
+<img width="428" height="1078" alt="image" src="https://github.com/user-attachments/assets/6ba3a185-9030-4dd4-bce2-863bb80200fd" />
+
+<img width="1205" height="103" alt="image" src="https://github.com/user-attachments/assets/1a647fad-4044-42cf-bb32-cec2664c028e" />
+
+
+
+## ✅ Summary
+
+This repository is a structured, day-wise guide to learning digital design and verification using Verilog. It includes theoretical explanations, simulation techniques, and lab exercises to strengthen understanding. The key areas covered are:
+
+- 📘 **Day 1**: Introduction to simulators and testbenches  
+- ⏱️ **Day 2**: Timing libraries, synthesis styles, and efficient flop coding  
+- 🧠 **Day 3**: Combinational and sequential logic optimizations  
+- 🧪 **Day 4**: Gate-Level Simulations (GLS) and Synthesis-Simulation Mismatches  
+- 🛠️ **Day 5**: Optimization in synthesis, IF-CASE constructs, and lab work with looping
