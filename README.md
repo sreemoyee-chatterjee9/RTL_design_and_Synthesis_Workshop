@@ -6,7 +6,7 @@
 - [Day 2: Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](#day-2-timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
 - [Day 3: Combinational and Sequential Logic Optimization](#day-3-combinational-and-sequential-logic-optimization)
 - [Day 4: Gate Level Simulation (GLS)](#day-4-gate-level-simulation-gls)
-- [Day 5: IF-CASE Constructs](#day-5-if-case-constructs)
+- [Day 5: Optimization in Synthesis](#day-5-optimization-in-synthesis)
 ---
 
 ## Day 1: Introduction
@@ -920,4 +920,14 @@ end
 
 ---
 
-## Day 5: IF-CASE Constructs
+## Day 5: Optimization in Synthesis
+
+### IF CASE CONSTRUCTS
+
+<img width="980" height="625" alt="image" src="https://github.com/user-attachments/assets/90b68cf6-5ebb-40ee-8b0d-76bbc8991697" />
+
+- **Note:** If condition 1 and condition 2 do not satisfy, we have not told the hardware to do anything.
+  - It will **latch** the value. The tool will **infer a latch**.
+  - It will **retain the previous value of `y`**.
+ 
+
