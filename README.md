@@ -947,7 +947,7 @@ end
 
 
 
-### LAB Work: 
+### LAB WORK: 
 ### 🧪 Incomplete If:
 
 <img width="584" height="125" alt="image" src="https://github.com/user-attachments/assets/bf58edfd-c276-4b84-aef1-9b4fcac07ec3" />
@@ -959,6 +959,7 @@ end
 - An `if` statement always translates into a **multiplexer (mux)** in hardware.
 - If **no `else` part** is mentioned, the output signal (`y`) will **latch on** to its previous value.
 - This results in the inference of a **D latch** (level-sensitive, typically **posedge**).
+
 
 <img width="1090" height="123" alt="image" src="https://github.com/user-attachments/assets/2f3a208b-64c9-4862-aecb-5df21ec1a560" />
 
@@ -973,7 +974,9 @@ end
 - Inferred latch coming out of incomplete if.
 
 
+
 ### 🧪 Incomplete If 2:
+
 
 <img width="676" height="165" alt="image" src="https://github.com/user-attachments/assets/7b5da3e9-576c-480c-a86d-5bbb3fd1b957" />
 
@@ -994,7 +997,9 @@ end
 <img width="1205" height="291" alt="image" src="https://github.com/user-attachments/assets/13c39ede-dd77-4a8c-b00d-59a6d57a4643" />
 
 
+
 ### 🧪 Incomplete cases:
+
 
 <img width="753" height="154" alt="image" src="https://github.com/user-attachments/assets/353e6a0b-ab3d-4844-8eb4-77a30047757d" />
 
@@ -1013,7 +1018,9 @@ end
 <img width="1205" height="220" alt="image" src="https://github.com/user-attachments/assets/9fef7866-ce38-40a7-82e6-00cc991e87db" />
 
 
+
 ### 🧪 Complete Case:
+
 
 <img width="728" height="183" alt="image" src="https://github.com/user-attachments/assets/7a8ae58d-f67c-455a-8645-e1c058fbbb51" />
 
@@ -1032,7 +1039,9 @@ end
 - This is Complete combinational gates.
 
 
+
 ### 🧪 Partial Case:
+
 
 <img width="959" height="273" alt="image" src="https://github.com/user-attachments/assets/2521bfb3-dc0c-40d2-9070-b41bde92060c" />
 
@@ -1048,16 +1057,21 @@ end
 - There will be no latch for Y.
 
 
+
 ### 🧪 BAD CASE:
+
 
 <img width="796" height="229" alt="image" src="https://github.com/user-attachments/assets/cc6213b4-3d56-48e2-b95e-233a765d1d4a" />
 
+
 ### Overlapping Case Conditions:
+
 
 - When `select` becomes `11`, it will get executed **as well as** for `10`.
 - The condition `10` **matches two cases**, which **confuses the simulator**.
 - This leads to **synthesis-simulation mismatches**.
 - ⚠️ This is called an **overlapping condition** and should be avoided in properly written `case` statements.
+
 
 <img width="1084" height="115" alt="image" src="https://github.com/user-attachments/assets/524e08d2-808a-4419-8b42-0718295e48e7" />
 
@@ -1073,16 +1087,46 @@ end
 
 <img width="1205" height="147" alt="image" src="https://github.com/user-attachments/assets/1269264e-86de-490b-8622-0e28c1e12e08" />
 
+
 ### ✅ Proper Case Coding Practice:
 
 - All the **legs of the `case` statement should be mutually exclusive**.
 - This is the **correct way to code** and will **prevent synthesis-simulation mismatches**.
 
 
+
 ### 🔁 Looping Constructs
 
 <img width="1199" height="1159" alt="image" src="https://github.com/user-attachments/assets/9f8acdf6-996e-45da-9a4d-6d1d9d996df4" />
 
+
+<img width="1205" height="667" alt="image" src="https://github.com/user-attachments/assets/a8327a07-0d61-4e1a-93a8-5f5753fe5321" />
+
+
+<img width="1205" height="573" alt="image" src="https://github.com/user-attachments/assets/cc9544e2-bac0-49fe-bb88-d79ee163411d" />
+
+
+<img width="1205" height="1207" alt="image" src="https://github.com/user-attachments/assets/a88c57eb-3a5f-46e6-803a-d23b53e5a411" />
+
+
+### 🧪 LAB WORK:
+
+
+<img width="768" height="195" alt="image" src="https://github.com/user-attachments/assets/fa083a2e-a39e-4133-8422-5b0655fe4c06" />
+
+<img width="354" height="314" alt="image" src="https://github.com/user-attachments/assets/fab6dff0-292c-4673-bce6-97312229c198" />
+<img width="391" height="101" alt="image" src="https://github.com/user-attachments/assets/113df8e4-434d-45e2-97e0-5ec55d44151a" />
+
+<img width="1205" height="174" alt="image" src="https://github.com/user-attachments/assets/72e98a9e-691e-48ad-a10c-234041aef5e3" />
+
+
+<img width="585" height="229" alt="image" src="https://github.com/user-attachments/assets/f4bff4ea-9ace-4ee4-87f3-9001f3cc142b" />
+<img width="261" height="236" alt="image" src="https://github.com/user-attachments/assets/bfc3b2c9-1513-462b-bea7-bb4062c9af1d" />
+
+
+<img width="709" height="381" alt="image" src="https://github.com/user-attachments/assets/ddd5b807-5ed7-4ca9-9bbe-d145f492e265" />
+
+<img width="1205" height="265" alt="image" src="https://github.com/user-attachments/assets/e86306c2-e763-4803-8e03-4e5cd56fdbd7" />
 
 
 
